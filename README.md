@@ -28,6 +28,12 @@ In Cursor: **File → Open Folder…** and choose the `seattle-wall-co` director
 
 Without Resend configured, **production** submissions show a friendly error; **development** logs the message to the server console.
 
+**Production email checklist (Vercel + Resend):**
+
+1. Add `RESEND_API_KEY`, `CONTACT_INBOX_EMAIL` (your inbox), and `RESEND_FROM_EMAIL` in the Vercel project → Settings → Environment Variables (Production), then **Redeploy**.
+2. In [Resend](https://resend.com), verify the domain you send **from** (e.g. `seattlewallco.com`) via their DNS records. Use an address like `hello@seattlewallco.com` as `RESEND_FROM_EMAIL`. The test address `onboarding@resend.dev` is only for limited testing and often fails for real customer inboxes until your domain is verified.
+3. After a failed submit, check **Vercel → Deployment → Logs** for `[contact] Resend error` to see the API message (domain, validation, etc.).
+
 ## Content checklist before launch
 
 1. Replace demo Unsplash assets in `src/data/gallery.ts` with your photography.

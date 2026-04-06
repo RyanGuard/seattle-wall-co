@@ -24,7 +24,8 @@ export async function submitContact(
   _prevState: ContactState,
   formData: FormData,
 ): Promise<ContactState> {
-  const hp = String(formData.get("company_website") ?? "");
+  /** Honeypot — avoid names like "company_website" that password managers autofill. */
+  const hp = String(formData.get("_confirm_blank") ?? "");
   if (hp.length > 0) {
     return { status: "success", message: "Thanks — we'll be in touch shortly." };
   }
@@ -66,7 +67,11 @@ export async function submitContact(
   ].join("\n");
 
   if (!apiKey || !inbox) {
-    console.warn("[contact] RESEND_API_KEY or CONTACT_INBOX_EMAIL missing — lead not emailed");
+    console.warn(
+      "[contact] Missing Resend config — set RESEND_API_KEY and CONTACT_INBOX_EMAIL on the host (e.g. Vercel). hasApiKey=%s hasInbox=%s",
+      Boolean(apiKey),
+      Boolean(inbox),
+    );
     if (process.env.NODE_ENV === "development") {
       console.info(bodyText);
       return {
@@ -95,7 +100,7 @@ export async function submitContact(
     console.error("[contact] Resend error", error);
     return {
       status: "error",
-      message: "Something went wrong sending your note. Please try calling us instead.",
+      message: `Something went wrong sending your note. Email ${site.email} or call ${site.phone}.`,
     };
   }
 

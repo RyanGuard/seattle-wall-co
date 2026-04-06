@@ -12,7 +12,7 @@ export function ContactForm() {
     <form action={formAction} className="mt-10 space-y-6">
       <input
         type="text"
-        name="company_website"
+        name="_confirm_blank"
         tabIndex={-1}
         autoComplete="off"
         className="sr-only"

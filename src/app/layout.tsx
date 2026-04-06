@@ -4,7 +4,7 @@ import "./globals.css";
 import { SiteFooter } from "@/components/SiteFooter";
 import { SiteHeader } from "@/components/SiteHeader";
 import { LocalBusinessJsonLd } from "@/components/JsonLd";
-import { site } from "@/lib/site";
+import { devTitleSuffix, site } from "@/lib/site";
 
 const fraunces = Fraunces({
   variable: "--font-fraunces",
@@ -22,8 +22,8 @@ const dmSans = DM_Sans({
 export const metadata: Metadata = {
   metadataBase: new URL(site.url),
   title: {
-    default: `${site.name} | Wall printing & murals in Seattle, WA`,
-    template: `%s | ${site.name}`,
+    default: `${site.name}${devTitleSuffix} | Wall printing & murals in Seattle, WA`,
+    template: `%s | ${site.name}${devTitleSuffix}`,
   },
   description: site.tagline,
   openGraph: {
@@ -31,12 +31,12 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: site.url,
     siteName: site.name,
-    title: `${site.name} — Seattle wall printing`,
+    title: `${site.name}${devTitleSuffix} — Seattle wall printing`,
     description: site.tagline,
   },
   twitter: {
     card: "summary_large_image",
-    title: `${site.name} — Seattle wall printing`,
+    title: `${site.name}${devTitleSuffix} — Seattle wall printing`,
     description: site.tagline,
   },
   robots: {

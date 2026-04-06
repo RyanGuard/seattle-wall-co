@@ -2,9 +2,9 @@ import Image from "next/image";
 import Link from "next/link";
 import { site } from "@/lib/site";
 
-/** On-wall mural reference (stock — not a Seattle Wall Co. project). */
+/** Full-height exterior mural — stock reference in the spirit of vertical wall-print portfolios. */
 const heroImage =
-  "https://images.unsplash.com/photo-1765366417031-60bc8543189c?auto=format&fit=crop&w=1800&q=88";
+  "https://images.unsplash.com/photo-1653570449715-e764cf567138?auto=format&fit=crop&w=1800&q=88";
 
 export function Hero() {
   return (
@@ -70,7 +70,7 @@ export function Hero() {
         <div className="relative order-1 min-h-[280px] lg:order-2 lg:min-h-full">
           <Image
             src={heroImage}
-            alt="Architectural interior with space for large-scale wall graphics"
+            alt="Building facade with large-scale printed mural graphics"
             fill
             priority
             className="object-cover object-center lg:object-[center_40%]"

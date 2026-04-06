@@ -11,7 +11,7 @@ import { ServiceArea } from "@/components/ServiceArea";
 import { TrustRow } from "@/components/TrustRow";
 import { beforeAfterItems } from "@/data/beforeAfter";
 import { galleryItems } from "@/data/gallery";
-import { site } from "@/lib/site";
+import { devTitleSuffix, site } from "@/lib/site";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   alternates: { canonical: site.url },
   openGraph: {
     url: site.url,
-    title: `${site.name} — Wall printing & murals in Seattle, WA`,
+    title: `${site.name}${devTitleSuffix} — Wall printing & murals in Seattle, WA`,
     description: site.tagline,
   },
 };

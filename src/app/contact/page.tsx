@@ -1,5 +1,5 @@
 import { ContactForm } from "@/app/contact/ContactForm";
-import { site } from "@/lib/site";
+import { devTitleSuffix, site } from "@/lib/site";
 import type { Metadata } from "next";
 import Link from "next/link";
 
@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   alternates: { canonical: `${site.url}/contact` },
   openGraph: {
     url: `${site.url}/contact`,
-    title: `Contact ${site.name}`,
+    title: `Contact ${site.name}${devTitleSuffix}`,
     description: `Book a site visit or share wall photos for a scoped proposal.`,
   },
 };

@@ -15,12 +15,14 @@ export function GallerySection({ items }: Props) {
         <header className="max-w-2xl">
           <p className="eyebrow">Example work</p>
           <h2 className="mt-6 font-display text-3xl font-medium tracking-tight text-ink text-balance sm:text-4xl lg:text-[2.5rem] lg:leading-tight">
-            Seattle, Bellevue &amp; Eastside scenarios we love building
+            Vertical wall-print scenarios we scope every week
           </h2>
           <p className="mt-5 max-w-xl text-pretty text-base leading-relaxed text-muted">
-            Every tile below is a <strong className="font-medium text-ink">real wall with something on it</strong>
-            —murals, type, graphics, or illustrated programs—not empty offices or landscape-only stock. Images
-            are still Unsplash references, not Seattle Wall Co. client photos; swap in your installs when ready.
+            The tiles mirror what you see in professional vertical-printer portfolios: tall facades, atria,
+            stairs, dining feature walls, and immersive brand rooms. Each photo is{" "}
+            <strong className="font-medium text-ink">real ink on a real substrate</strong>
+            —but still Unsplash stock, not Seattle Wall Co. installs. Drop in your photography when the jobs are
+            wrapped.
           </p>
         </header>
 

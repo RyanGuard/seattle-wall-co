@@ -4,13 +4,18 @@ Next.js (App Router) marketing site for a Seattle wall-printing business: galler
 
 ## Development
 
+This repo runs the dev server on **port 3010** on purpose, so it does not fight another app (for example Git Scout) that is already using **3000**.
+
 ```sh
+cd /path/to/seattle-wall-co
 npm install
-cp .env.example .env.local
+cp .env.example .env.local   # optional
 npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000).
+Open [http://localhost:3010](http://localhost:3010) (check the terminal if the port ever changes).
+
+In Cursor: **File → Open Folder…** and choose the `seattle-wall-co` directory so the terminal’s `npm run dev` is this project, not another repo.
 
 ## Environment
 

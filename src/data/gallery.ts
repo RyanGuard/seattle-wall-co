@@ -1,6 +1,7 @@
 /**
- * On-wall examples via Unsplash — every thumbnail shows ink/print/paint on a real substrate.
- * Not Seattle Wall Co. client work; replace with your install photography when available.
+ * Industry-style examples modeled on common vertical wall-printing portfolios
+ * (full-height facades, atriums, dining graphics, brand rooms). All Unsplash stock —
+ * not Seattle Wall Co. client work; replace with your installs when ready.
  */
 export type GalleryCategory = "Office" | "Retail" | "Event" | "Hospitality" | "Mural";
 
@@ -22,91 +23,91 @@ export type GalleryItem = {
 
 export const galleryItems: GalleryItem[] = [
   {
-    id: "wall-chalk-collab",
-    title: "Seattle-area HQ — illustrated team wall",
+    id: "exterior-full-height-wrap",
+    title: "Campus facade — full-height color story",
+    category: "Mural",
+    outcome:
+      "Typical of how vertical rigs dress tall masonry: one continuous vertical pass, alignment to control joints, and UV-curable ink that survives rain-cycling—useful when briefing Seattle or Eastside property teams on access lifts.",
+    src: "https://images.unsplash.com/photo-1653570449715-e764cf567138?auto=format&fit=crop&w=1400&q=80",
+    width: 1400,
+    height: 933,
+    photoCredit: "Unsplash — exterior mural reference (not our install)",
+  },
+  {
+    id: "atrium-color-block",
+    title: "Atrium wall — floor-to-ceiling saturation",
     category: "Office",
     outcome:
-      "Example of a full wall turned into a working surface: oversized illustrations and notes that read from the tables—common for SLU and Bellevue product teams who want culture on the drywall.",
-    src: "https://images.unsplash.com/photo-1758873268877-3cd8ed329ed8?auto=format&fit=crop&w=1400&q=80",
+      "Large vertical fields of color in lobbies and atriums—where color management and seam strategy matter as much as the artwork. Good reference for Bellevue towers that want impact without vinyl seams every few feet.",
+    src: "https://images.unsplash.com/photo-1638662676137-927e2475b072?auto=format&fit=crop&w=1400&q=80",
     width: 1400,
     height: 933,
-    photoCredit: "Unsplash — on-wall example (not our install)",
+    photoCredit: "Unsplash — interior feature wall (not our install)",
   },
   {
-    id: "wall-mural-lounge",
-    title: "Eastside lounge — printed scenic wrap",
+    id: "dining-booth-stripes",
+    title: "Fast-casual — patterned booth wall",
     category: "Hospitality",
     outcome:
-      "Floor-to-ceiling printed mural behind lounge seating shows how we think about sightlines from the entry—matte laminate optional for camera glare near glass walls.",
-    src: "https://images.unsplash.com/photo-1765366417031-60bc8543189c?auto=format&fit=crop&w=1400&q=80",
+      "Repeating wall graphics behind banquettes: registration to chair rails and HVAC reveals is the kind of detail we walk through with your architect—common in Tacoma–Seattle restaurant rollouts.",
+    src: "https://images.unsplash.com/photo-1769002214898-269ada3c85a2?auto=format&fit=crop&w=1400&q=80",
     width: 1400,
     height: 933,
-    photoCredit: "Unsplash — on-wall example (not our install)",
+    photoCredit: "Unsplash — dining graphics reference (not our install)",
   },
   {
-    id: "wall-immersive-landscape",
-    title: "Reception immersion — landscape on gypsum",
-    category: "Mural",
+    id: "stairwell-graphic-climb",
+    title: "Public stair — vertical graphic climb",
+    category: "Office",
     outcome:
-      "Wide landscape mural bonded flush to painted gypsum—useful reference when a Tacoma or Seattle client wants ‘Rainier room’ drama without a framed poster look.",
-    src: "https://images.unsplash.com/photo-1735633740994-2d28026fe32e?auto=format&fit=crop&w=1400&q=80",
+      "Stairs are natural 'vertical printer' showcases: tall sightlines, handrail conflicts, and fire-rating questions. This scenario helps us talk about night access and protection while the public is off the flight.",
+    src: "https://images.unsplash.com/photo-1715593947910-bb37cea253a4?auto=format&fit=crop&w=1400&q=80",
     width: 1400,
     height: 933,
-    photoCredit: "Ingmar / Unsplash — on-wall example (not our install)",
+    photoCredit: "Unsplash — stairwell graphics (not our install)",
   },
   {
-    id: "wall-type-brick",
-    title: "Brick loft — typographic wall program",
-    category: "Mural",
+    id: "reception-cityscape-gypsum",
+    title: "Reception — photoreal city on gypsum",
+    category: "Office",
     outcome:
-      "Painted brick with large-scale lettering: substrate prep matters here—illustrative of Pioneer Square–style lofts and sublease creative floors.",
-    src: "https://images.unsplash.com/photo-1722491713967-388b8aee8066?auto=format&fit=crop&w=1200&q=80",
-    width: 1200,
-    height: 800,
-    photoCredit: "Unsplash — painted brick example (not our install)",
+      "Photographic murals bonded flush to painted gypsum—similar to how we proof skin tones and skyline detail before we commit ink on your SLU or Kirkland reception wall.",
+    src: "https://images.unsplash.com/photo-1677272294437-c7ac54693ac3?auto=format&fit=crop&w=1400&q=80",
+    width: 1400,
+    height: 933,
+    photoCredit: "Unsplash — reception mural reference (not our install)",
   },
   {
-    id: "wall-graphic-brick",
-    title: "Retail shell — high-contrast graphic masonry",
+    id: "lounge-seating-mural",
+    title: "Lounge vignette — seating + full wall",
+    category: "Hospitality",
+    outcome:
+      "Sightlines from entry through seating: matte versus satin finishes, glare from storefront glass—the sort of trade finish conversation we have weekly with Eastside developers.",
+    src: "https://images.unsplash.com/photo-1677272294917-3b17980e54d2?auto=format&fit=crop&w=1400&q=80",
+    width: 1400,
+    height: 933,
+    photoCredit: "Unsplash — lounge mural reference (not our install)",
+  },
+  {
+    id: "brand-room-allover",
+    title: "Brand room — allover wall program",
     category: "Retail",
     outcome:
-      "Bold graphic on interior masonry—shows how we talk about alignment to mortar lines and expansion when briefing your GC.",
-    src: "https://images.unsplash.com/photo-1722491714046-64ee4143d6cf?auto=format&fit=crop&w=1200&q=80",
-    width: 1200,
-    height: 800,
-    photoCredit: "Unsplash — on-wall example (not our install)",
+      "Immersive pattern work for flagship or pop-up programs: corners, returns, and door wraps in one scope—how vertical equipment shines when everything has to line up in camera tests.",
+    src: "https://images.unsplash.com/photo-1758923530347-05cafe8db58e?auto=format&fit=crop&w=1400&q=80",
+    width: 1400,
+    height: 933,
+    photoCredit: "Unsplash — immersive retail walls (not our install)",
   },
   {
-    id: "wall-monochrome-brick",
-    title: "Wayfinding lane — monochrome lettering",
+    id: "industrial-masonry-wrap",
+    title: "Industrial facade — oversized graphic on masonry",
     category: "Mural",
     outcome:
-      "Single-color lettering tight to corners—helpful reference for Ballard and Fremont hospitality clients who want signage baked into the architecture.",
-    src: "https://images.unsplash.com/photo-1722491713991-7ff1fb2e203c?auto=format&fit=crop&w=1200&q=80",
-    width: 1200,
-    height: 800,
-    photoCredit: "Unsplash — on-wall example (not our install)",
-  },
-  {
-    id: "wall-restaurant-feature",
-    title: "Bellevue-row dining — vertical feature finish",
-    category: "Hospitality",
-    outcome:
-      "Warm dining room with wall treatments tying to banquettes—shows how vertical graphics meet wainscot and HVAC so nothing looks like an afterthought.",
-    src: "https://images.unsplash.com/photo-1747737548299-888965e5ce77?auto=format&fit=crop&w=1400&q=80",
+      "Heavy pigment on coarse masonry—substrate tests and dot gain matter here. Helpful benchmark when a client wants warehouse or flex branding visible from the ROW.",
+    src: "https://images.unsplash.com/photo-1584951961247-b20fdb8a883d?auto=format&fit=crop&w=1400&q=80",
     width: 1400,
     height: 933,
-    photoCredit: "Unsplash — on-wall example (not our install)",
-  },
-  {
-    id: "wall-restaurant-ambient",
-    title: "Night-service wall palette",
-    category: "Hospitality",
-    outcome:
-      "Darker trade finish with art-forward walls—useful when discussing Tacoma–Seattle restaurant groups who need washes, murals, and durable topcoats in one scope.",
-    src: "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1400&q=80",
-    width: 1400,
-    height: 933,
-    photoCredit: "Unsplash — on-wall example (not our install)",
+    photoCredit: "Unsplash — masonry graphic reference (not our install)",
   },
 ];

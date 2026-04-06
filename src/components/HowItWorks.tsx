@@ -48,7 +48,7 @@ export function HowItWorks() {
           <iframe
             title="Vertical wall printer in action"
             className="aspect-video w-full border-0"
-            src="https://www.youtube.com/embed/kcQrknEEfos?rel=0"
+            src="https://www.youtube.com/embed/dRqzx7fawRE?rel=0"
             loading="lazy"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen

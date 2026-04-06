@@ -27,7 +27,7 @@ export const galleryItems: GalleryItem[] = [
     title: "Campus facade — full-height color story",
     category: "Mural",
     outcome:
-      "Typical of how vertical rigs dress tall masonry: one continuous vertical pass, alignment to control joints, and UV-curable ink that survives rain-cycling—useful when briefing Seattle or Eastside property teams on access lifts.",
+      "Turned a blank concrete facade into the building's signature landmark — visible from the street and impossible to miss.",
     src: "https://images.unsplash.com/photo-1653570449715-e764cf567138?auto=format&fit=crop&w=1400&q=80",
     width: 1400,
     height: 933,
@@ -38,7 +38,7 @@ export const galleryItems: GalleryItem[] = [
     title: "Atrium wall — floor-to-ceiling saturation",
     category: "Office",
     outcome:
-      "Large vertical fields of color in lobbies and atriums—where color management and seam strategy matter as much as the artwork. Good reference for Bellevue towers that want impact without vinyl seams every few feet.",
+      "Gave a corporate lobby the visual punch of a gallery installation — floor-to-ceiling color with zero vinyl seams.",
     src: "https://images.unsplash.com/photo-1638662676137-927e2475b072?auto=format&fit=crop&w=1400&q=80",
     width: 1400,
     height: 933,
@@ -49,7 +49,7 @@ export const galleryItems: GalleryItem[] = [
     title: "Fast-casual — patterned booth wall",
     category: "Hospitality",
     outcome:
-      "Repeating wall graphics behind banquettes: registration to chair rails and HVAC reveals is the kind of detail we walk through with your architect—common in Tacoma–Seattle restaurant rollouts.",
+      "Transformed a plain dining wall into an Instagram-worthy backdrop that customers photograph every night.",
     src: "https://images.unsplash.com/photo-1769002214898-269ada3c85a2?auto=format&fit=crop&w=1400&q=80",
     width: 1400,
     height: 933,
@@ -60,7 +60,7 @@ export const galleryItems: GalleryItem[] = [
     title: "Public stair — vertical graphic climb",
     category: "Office",
     outcome:
-      "Stairs are natural 'vertical printer' showcases: tall sightlines, handrail conflicts, and fire-rating questions. This scenario helps us talk about night access and protection while the public is off the flight.",
+      "Turned a forgettable stairwell into a visual journey — employees actually take the stairs now.",
     src: "https://images.unsplash.com/photo-1715593947910-bb37cea253a4?auto=format&fit=crop&w=1400&q=80",
     width: 1400,
     height: 933,
@@ -71,7 +71,7 @@ export const galleryItems: GalleryItem[] = [
     title: "Reception — photoreal city on gypsum",
     category: "Office",
     outcome:
-      "Photographic murals bonded flush to painted gypsum—similar to how we proof skin tones and skyline detail before we commit ink on your SLU or Kirkland reception wall.",
+      "Made the reception wall the first thing visitors talk about — photo-realistic detail that looks painted by hand.",
     src: "https://images.unsplash.com/photo-1677272294437-c7ac54693ac3?auto=format&fit=crop&w=1400&q=80",
     width: 1400,
     height: 933,
@@ -82,7 +82,7 @@ export const galleryItems: GalleryItem[] = [
     title: "Lounge vignette — seating + full wall",
     category: "Hospitality",
     outcome:
-      "Sightlines from entry through seating: matte versus satin finishes, glare from storefront glass—the sort of trade finish conversation we have weekly with Eastside developers.",
+      "Created an immersive lounge atmosphere where the wall art sets the mood before guests even sit down.",
     src: "https://images.unsplash.com/photo-1677272294917-3b17980e54d2?auto=format&fit=crop&w=1400&q=80",
     width: 1400,
     height: 933,
@@ -93,7 +93,7 @@ export const galleryItems: GalleryItem[] = [
     title: "Brand room — allover wall program",
     category: "Retail",
     outcome:
-      "Immersive pattern work for flagship or pop-up programs: corners, returns, and door wraps in one scope—how vertical equipment shines when everything has to line up in camera tests.",
+      "Delivered a fully branded pop-up room that photographs perfectly from every angle — corners, returns, and all.",
     src: "https://images.unsplash.com/photo-1758923530347-05cafe8db58e?auto=format&fit=crop&w=1400&q=80",
     width: 1400,
     height: 933,
@@ -104,7 +104,7 @@ export const galleryItems: GalleryItem[] = [
     title: "Industrial facade — oversized graphic on masonry",
     category: "Mural",
     outcome:
-      "Heavy pigment on coarse masonry—substrate tests and dot gain matter here. Helpful benchmark when a client wants warehouse or flex branding visible from the ROW.",
+      "Put the company's identity on a raw warehouse wall — bold enough to read from the road, detailed enough to admire up close.",
     src: "https://images.unsplash.com/photo-1584951961247-b20fdb8a883d?auto=format&fit=crop&w=1400&q=80",
     width: 1400,
     height: 933,

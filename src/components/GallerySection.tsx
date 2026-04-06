@@ -15,14 +15,13 @@ export function GallerySection({ items }: Props) {
         <header className="max-w-2xl">
           <p className="eyebrow">Example work</p>
           <h2 className="mt-6 font-display text-3xl font-medium tracking-tight text-ink text-balance sm:text-4xl lg:text-[2.5rem] lg:leading-tight">
-            Vertical wall-print scenarios we scope every week
+            See what's possible on your walls
           </h2>
           <p className="mt-5 max-w-xl text-pretty text-base leading-relaxed text-muted">
-            The tiles mirror what you see in professional vertical-printer portfolios: tall facades, atria,
-            stairs, dining feature walls, and immersive brand rooms. Each photo is{" "}
+            Lobbies, stairwells, dining rooms, facades — every surface is a canvas. These reference photos
+            show the range of what vertical wall printing delivers. Each is{" "}
             <strong className="font-medium text-ink">real ink on a real substrate</strong>
-            —but still Unsplash stock, not Seattle Wall Co. installs. Drop in your photography when the jobs are
-            wrapped.
+            —Unsplash stock for now, replaced with our Seattle installs as we complete them.
           </p>
         </header>
 

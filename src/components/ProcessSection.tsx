@@ -5,15 +5,15 @@ const steps = [
   },
   {
     title: "Design & approval",
-    body: "Color-managed proofs, substrate checks, and a clear install plan so facilities and marketing stay aligned.",
+    body: "Color-managed proofs, a substrate compatibility check to confirm your wall is print-ready, and a clear install plan so facilities and marketing stay aligned.",
   },
   {
     title: "Print day",
-    body: "Protected floors, controlled curing, and quiet coordination with building managers—most installs finish without drama.",
+    body: "The vertical printer mounts on a rail system, moves in precise passes, and lays UV-cured ink that dries instantly. Most single-wall jobs finish in a few hours — no drying time, no fumes.",
   },
   {
     title: "Walkthrough & care",
-    body: "Punch list, care notes, and optional maintenance schedule. We want the wall to look intentional on day 300, not just day one.",
+    body: "Punch list, care notes, and optional maintenance schedule. UV-cured prints need zero cure time — the wall is ready to use immediately. We want it to look intentional on day 300, not just day one.",
   },
 ];
 

@@ -1,7 +1,7 @@
 const rows = [
   {
     dimension: "Speed to finished wall",
-    us: "Digital workflow + on-wall production—days, not hand-painting weeks.",
+    us: "Robotic printer + UV-cured ink — most single walls finish in hours, not days or weeks.",
     vinyl: "Fast when design is simple; complex gradients can require multiple panels.",
     muralist: "Authentic craft; timeline scales with artist availability and complexity.",
     diy: "Depends on operator skill; mistakes are costly on large surfaces.",
@@ -29,10 +29,24 @@ const rows = [
   },
   {
     dimension: "Durability aftercare",
-    us: "Protective finishes specified to traffic; documented care guides.",
+    us: "UV-cured inks rated 7–10+ years indoors. Protective finishes specified to traffic; documented care guides.",
     vinyl: "Durable when specified correctly; edges can lift in dirty installs.",
     muralist: "Touch-up tied to artist schedule and travel.",
     diy: "Varies widely by ink/media; often minimal warranty.",
+  },
+  {
+    dimension: "Seam visibility",
+    us: "Zero seams — the printer covers the wall in continuous passes regardless of size.",
+    vinyl: "Panel seams visible on large walls and solid colors; edges can lift over time.",
+    muralist: "No seams — hand-painted is inherently seamless.",
+    diy: "Seams or overlap marks common with panel-based approaches.",
+  },
+  {
+    dimension: "Textured & rough surfaces",
+    us: "Prints directly on brick, CMU, concrete, stucco — surfaces that reject vinyl.",
+    vinyl: "Requires smooth surfaces; textured walls cause bubbling and poor adhesion.",
+    muralist: "Artists can paint on any surface, though speed varies with texture.",
+    diy: "Very difficult on rough surfaces without professional experience.",
   },
 ];
 

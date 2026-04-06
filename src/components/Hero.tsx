@@ -17,14 +17,14 @@ export function Hero() {
             aria-hidden
           />
           <p className="reveal reveal-delay-1 eyebrow text-accent-soft">
-            Seattle · Wall printing
+            Seattle · Direct-to-wall printing
           </p>
           <h1 className="reveal reveal-delay-2 mt-8 max-w-xl text-balance font-display text-4xl font-medium leading-[1.12] tracking-tight text-cloud sm:text-5xl lg:text-[3.25rem] lg:leading-[1.1]">
-            Monumental walls, printed and installed with precision.
+            Your walls, printed by a robot—no vinyl, no seams, no limits.
           </h1>
           <p className="reveal reveal-delay-3 mt-6 max-w-md text-pretty text-base leading-relaxed text-cloud/75 sm:text-lg">
-            Brand features, retail graphics, and event backdrops—color-managed and finished for real
-            buildings across the Puget Sound.
+            A rail-mounted printer applies UV-cured ink directly onto your walls—brick, concrete, or
+            drywall. Photo-realistic graphics installed in hours, built to last years.
           </p>
           <div className="reveal reveal-delay-4 mt-10 flex flex-wrap items-center gap-3">
             <Link
@@ -72,7 +72,7 @@ export function Hero() {
             src={heroImage}
             alt="Building facade with large-scale printed mural graphics"
             fill
-            priority
+            preload
             className="object-cover object-center lg:object-[center_40%]"
             sizes="(min-width: 1024px) 48vw, 100vw"
           />

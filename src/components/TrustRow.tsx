@@ -1,10 +1,10 @@
 import { site } from "@/lib/site";
 
 const highlights = [
-  "Insured installs",
-  "Seattle-based crew",
-  "Color-managed workflow",
-  "Lift & access planning",
+  "Direct-to-wall UV printing",
+  "No seams or peeling",
+  "Prints on any surface",
+  "Done in hours, not days",
 ] as const;
 
 export function TrustRow() {

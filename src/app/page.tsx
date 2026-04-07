@@ -7,6 +7,7 @@ import { GallerySection } from "@/components/GallerySection";
 import { Hero } from "@/components/Hero";
 import { HowItWorks } from "@/components/HowItWorks";
 import { PricingSection } from "@/components/PricingSection";
+import { PrintableSurfacesSection } from "@/components/PrintableSurfacesSection";
 import { ProcessSection } from "@/components/ProcessSection";
 import { ServiceArea } from "@/components/ServiceArea";
 import { TrustRow } from "@/components/TrustRow";
@@ -33,6 +34,7 @@ export default function HomePage() {
       <FaqJsonLd />
       <Hero />
       <TrustRow />
+      <PrintableSurfacesSection />
       <HowItWorks />
       <VerticalsSection />
       <GallerySection items={galleryItems} />

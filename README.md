@@ -7,7 +7,7 @@ Next.js (App Router) marketing site for a Seattle wall-printing business: galler
 This repo runs the dev server on **port 3010** on purpose, so it does not fight another app (for example Git Scout) that is already using **3000**.
 
 ```sh
-cd /path/to/seattle-wall-co
+cd /path/to/your-project   # the folder that contains package.json
 npm install
 cp .env.example .env.local   # optional
 npm run dev
@@ -15,7 +15,7 @@ npm run dev
 
 Open [http://localhost:3010](http://localhost:3010) (check the terminal if the port ever changes).
 
-In Cursor: **File → Open Folder…** and choose the `seattle-wall-co` directory so the terminal’s `npm run dev` is this project, not another repo.
+In Cursor: **File → Open Folder…** and pick **that same project root** (where `package.json` lives) so the integrated terminal runs `npm run dev` in the right place.
 
 ## Environment
 

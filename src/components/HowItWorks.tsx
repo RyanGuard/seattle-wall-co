@@ -1,4 +1,6 @@
 import Link from "next/link";
+import { SiteVideo } from "@/components/SiteVideo";
+import { howItWorksVideos, howItWorksYoutubeId } from "@/data/site-videos";
 
 const steps = [
   {
@@ -43,16 +45,45 @@ export function HowItWorks() {
           your wall and lays down UV-cured ink that bonds permanently to the surface.
         </p>
 
-        {/* Video embed */}
-        <div className="mt-14 overflow-hidden rounded-2xl border-2 border-ink/20 bg-ink shadow-[8px_8px_0_0_rgba(255,45,122,0.2)]">
-          <iframe
-            title="Vertical wall printer in action"
-            className="aspect-video w-full border-0"
-            src="https://www.youtube.com/embed/8_kOQzIYEdo?rel=0"
-            loading="lazy"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen
-          />
+        {/* Video: your files in public/videos/ first; YouTube when no locals configured */}
+        <div className="mt-14 space-y-6">
+          {howItWorksVideos.length > 0 ? (
+            <>
+              <div className="space-y-4">
+                {howItWorksVideos.map((v) => (
+                  <figure key={v.src} className="overflow-hidden rounded-2xl border-2 border-ink/20 bg-ink shadow-[8px_8px_0_0_rgba(255,45,122,0.2)]">
+                    <SiteVideo src={v.src} title={v.title} className="aspect-video w-full bg-black object-contain" />
+                    <figcaption className="border-t-2 border-white/10 bg-deep px-4 py-2 text-center text-xs font-semibold text-cloud/80">
+                      {v.title}
+                    </figcaption>
+                  </figure>
+                ))}
+              </div>
+              <p className="text-center text-sm text-muted">
+                Longer walkthrough on{" "}
+                <a
+                  href={`https://www.youtube.com/watch?v=${howItWorksYoutubeId}`}
+                  className="font-semibold text-accent underline-offset-2 hover:underline"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  YouTube
+                </a>
+                .
+              </p>
+            </>
+          ) : (
+            <div className="overflow-hidden rounded-2xl border-2 border-ink/20 bg-ink shadow-[8px_8px_0_0_rgba(255,45,122,0.2)]">
+              <iframe
+                title="Vertical wall printer in action"
+                className="aspect-video w-full border-0"
+                src={`https://www.youtube.com/embed/${howItWorksYoutubeId}?rel=0`}
+                loading="lazy"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              />
+            </div>
+          )}
         </div>
 
         {/* 4-step process */}

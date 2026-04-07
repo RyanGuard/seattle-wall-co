@@ -4,7 +4,7 @@ export const faqItems: FaqItem[] = [
   {
     question: "What is a vertical wall printer?",
     answer:
-      "It's a rail-mounted robotic inkjet that moves up and down your wall, printing in full color. UV-curable inks bond directly to the surface and cure instantly — no vinyl, no wallpaper, no hand-painting. Think of it as a giant inkjet printer that uses your wall as the paper.",
+      "It's a rail-guided print system that moves vertically across your wall, laying down full-color, UV-curable ink that bonds directly to the surface and cures instantly—no vinyl, no wallpaper, no hand-painting. Think of it as a large-format printer that uses your wall as the canvas.",
   },
   {
     question: "How is this different from vinyl wraps?",
@@ -50,5 +50,15 @@ export const faqItems: FaqItem[] = [
     question: "What should we do to prep the space?",
     answer:
       "Clear an 8–10′ buffer at the wall when possible, confirm power nearby, and share building rules (noise hours, dock booking). We'll send a checklist with your proposal.",
+  },
+  {
+    question: "Can you print our company logo on the wall?",
+    answer:
+      "Yes—when you supply official vector artwork (from your brand guidelines or design partner). We’ll size it for viewing distance, match brand colors, and if you want pattern or color behind it, we’ll design a backdrop that doesn’t compete with the mark. We don’t recreate third-party trademarks from scratch.",
+  },
+  {
+    question: "Is there a tool to explore wall art ideas?",
+    answer:
+      "Open Wall ideas in the site menu (/create)—it’s a simple mood sketchpad with visual style cards and logo-friendly starters. Output is inspiration only; production jobs still get proper file prep from us.",
   },
 ];

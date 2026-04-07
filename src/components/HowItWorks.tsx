@@ -35,8 +35,8 @@ export function HowItWorks() {
     <section id="how-it-works" className="scroll-mt-28 bg-cream px-5 py-24 sm:px-8">
       <div className="mx-auto max-w-6xl">
         <p className="eyebrow">How it works</p>
-        <h2 className="mt-6 max-w-2xl font-display text-3xl font-medium tracking-tight text-ink text-balance sm:text-4xl">
-          A robot prints directly on your wall — here's what that looks like
+        <h2 className="mt-6 max-w-2xl font-display text-3xl tracking-tight text-ink text-balance sm:text-4xl">
+          From your idea to the wall—here’s how direct printing works
         </h2>
         <p className="mt-5 max-w-2xl text-pretty text-base leading-relaxed text-muted">
           No vinyl sheets, no wallpaper paste, no hand-painting. A rail-mounted inkjet moves across
@@ -44,7 +44,7 @@ export function HowItWorks() {
         </p>
 
         {/* Video embed */}
-        <div className="mt-14 overflow-hidden rounded-2xl border border-mist/80 bg-ink shadow-[0_20px_50px_-28px_rgba(10,12,15,0.35)]">
+        <div className="mt-14 overflow-hidden rounded-2xl border-2 border-ink/20 bg-ink shadow-[8px_8px_0_0_rgba(255,45,122,0.2)]">
           <iframe
             title="Vertical wall printer in action"
             className="aspect-video w-full border-0"
@@ -68,14 +68,14 @@ export function HowItWorks() {
               >
                 {step.num}
               </span>
-              <h3 className="mt-5 font-display text-xl font-semibold text-ink">{step.title}</h3>
+              <h3 className="mt-5 font-display text-xl text-ink">{step.title}</h3>
               <p className="mt-3 text-sm leading-relaxed text-muted">{step.body}</p>
             </li>
           ))}
         </ol>
 
         {/* Key stats */}
-        <div className="mt-10 rounded-2xl border border-mist/90 bg-white p-7 shadow-sm sm:p-9">
+        <div className="mt-10 rounded-2xl border-2 border-mist/80 bg-white p-7 shadow-[6px_6px_0_0_rgba(26,11,46,0.07)] sm:p-9">
           <dl className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
             {stats.map((stat) => (
               <div key={stat.label}>
@@ -91,7 +91,7 @@ export function HowItWorks() {
         <div className="mt-10">
           <Link
             href="/contact"
-            className="inline-flex min-h-11 items-center justify-center rounded-full bg-ink px-7 text-sm font-semibold text-cloud transition hover:bg-accent hover:text-ink"
+            className="retro-btn-dark inline-flex min-h-11 items-center justify-center px-7 text-sm"
           >
             See if your wall qualifies
           </Link>

@@ -1,19 +1,20 @@
 import type { Metadata } from "next";
-import { DM_Sans, Fraunces } from "next/font/google";
+import { Righteous, Rubik } from "next/font/google";
 import "./globals.css";
 import { SiteFooter } from "@/components/SiteFooter";
 import { SiteHeader } from "@/components/SiteHeader";
 import { LocalBusinessJsonLd } from "@/components/JsonLd";
 import { devTitleSuffix, site } from "@/lib/site";
 
-const fraunces = Fraunces({
-  variable: "--font-fraunces",
+const righteous = Righteous({
+  variable: "--font-righteous",
   subsets: ["latin"],
   display: "swap",
+  weight: "400",
 });
 
-const dmSans = DM_Sans({
-  variable: "--font-dm-sans",
+const rubik = Rubik({
+  variable: "--font-rubik",
   subsets: ["latin"],
   display: "swap",
   weight: ["400", "500", "600", "700"],
@@ -53,9 +54,9 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${fraunces.variable} ${dmSans.variable} h-full antialiased`}
+      className={`${righteous.variable} ${rubik.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col text-ink selection:bg-accent-soft/40 selection:text-ink">
+      <body className="min-h-full flex flex-col text-ink selection:bg-accent-soft/50 selection:text-ink">
         <LocalBusinessJsonLd />
         <SiteHeader />
         <main className="flex-1">{children}</main>

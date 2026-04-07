@@ -3,7 +3,7 @@ import { site } from "@/lib/site";
 
 export function ServiceArea() {
   return (
-    <section className="border-y border-mist/80 bg-white px-5 py-24 sm:px-8">
+    <section className="border-y-2 border-mist/60 bg-white px-5 py-24 sm:px-8">
       <div className="mx-auto grid max-w-6xl gap-14 lg:grid-cols-2 lg:items-center lg:gap-16">
         <div>
           <p className="eyebrow">Service area</p>
@@ -17,7 +17,7 @@ export function ServiceArea() {
           <ul className="mt-8 flex flex-wrap gap-2">
             {site.serviceAreas.map((area) => (
               <li key={area}>
-                <span className="inline-block rounded-full border border-mist bg-cream/60 px-3.5 py-1.5 text-[12px] font-semibold uppercase tracking-wide text-ink-muted">
+                <span className="inline-block rounded-md border-2 border-mist/80 bg-cream/80 px-3.5 py-1.5 text-[12px] font-bold uppercase tracking-wide text-ink-muted shadow-[2px_2px_0_0_rgba(26,11,46,0.06)]">
                   {area}
                 </span>
               </li>
@@ -30,7 +30,7 @@ export function ServiceArea() {
             Schedule a walkthrough
           </Link>
         </div>
-        <div className="overflow-hidden rounded-2xl border border-mist shadow-[0_20px_50px_-28px_rgba(10,12,15,0.35)] ring-1 ring-ink/5">
+        <div className="overflow-hidden rounded-2xl border-2 border-ink/12 shadow-[8px_8px_0_0_rgba(0,212,184,0.15)]">
           <iframe
             title="Seattle service area map"
             className="aspect-[4/3] w-full border-0 grayscale-[0.35] contrast-[1.05]"

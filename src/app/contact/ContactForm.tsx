@@ -1,6 +1,7 @@
 "use client";
 
 import { submitContact, type ContactState } from "@/app/actions/contact";
+import { contactBudgetOptions } from "@/data/pricing";
 import { useActionState } from "react";
 
 const initialState: ContactState = { status: "idle" };
@@ -28,7 +29,7 @@ export function ContactForm() {
             id="name"
             name="name"
             required
-            className="mt-2 w-full rounded-xl border border-mist bg-white px-4 py-3 text-sm outline-none ring-accent/30 transition focus:ring-2"
+            className="mt-2 w-full rounded-lg border-2 border-mist/90 bg-white px-4 py-3 text-sm shadow-[3px_3px_0_0_rgba(26,11,46,0.05)] outline-none ring-accent/30 transition focus:ring-2"
             autoComplete="name"
           />
         </div>
@@ -41,7 +42,7 @@ export function ContactForm() {
             name="email"
             type="email"
             required
-            className="mt-2 w-full rounded-xl border border-mist bg-white px-4 py-3 text-sm outline-none ring-accent/30 transition focus:ring-2"
+            className="mt-2 w-full rounded-lg border-2 border-mist/90 bg-white px-4 py-3 text-sm shadow-[3px_3px_0_0_rgba(26,11,46,0.05)] outline-none ring-accent/30 transition focus:ring-2"
             autoComplete="email"
           />
         </div>
@@ -54,7 +55,7 @@ export function ContactForm() {
         <input
           id="organization"
           name="organization"
-          className="mt-2 w-full rounded-xl border border-mist bg-white px-4 py-3 text-sm outline-none ring-accent/30 transition focus:ring-2"
+          className="mt-2 w-full rounded-lg border-2 border-mist/90 bg-white px-4 py-3 text-sm shadow-[3px_3px_0_0_rgba(26,11,46,0.05)] outline-none ring-accent/30 transition focus:ring-2"
         />
       </div>
 
@@ -67,7 +68,7 @@ export function ContactForm() {
           name="location"
           required
           placeholder="e.g. Downtown Seattle — 8th & Pike"
-          className="mt-2 w-full rounded-xl border border-mist bg-white px-4 py-3 text-sm outline-none ring-accent/30 transition focus:ring-2"
+          className="mt-2 w-full rounded-lg border-2 border-mist/90 bg-white px-4 py-3 text-sm shadow-[3px_3px_0_0_rgba(26,11,46,0.05)] outline-none ring-accent/30 transition focus:ring-2"
         />
       </div>
 
@@ -80,7 +81,7 @@ export function ContactForm() {
           name="wallDetails"
           rows={3}
           placeholder="Approximate width × height, surface type, link to Dropbox, etc."
-          className="mt-2 w-full rounded-xl border border-mist bg-white px-4 py-3 text-sm outline-none ring-accent/30 transition focus:ring-2"
+          className="mt-2 w-full rounded-lg border-2 border-mist/90 bg-white px-4 py-3 text-sm shadow-[3px_3px_0_0_rgba(26,11,46,0.05)] outline-none ring-accent/30 transition focus:ring-2"
         />
       </div>
 
@@ -93,7 +94,7 @@ export function ContactForm() {
             id="timeline"
             name="timeline"
             placeholder="e.g. Before March 15"
-            className="mt-2 w-full rounded-xl border border-mist bg-white px-4 py-3 text-sm outline-none ring-accent/30 transition focus:ring-2"
+            className="mt-2 w-full rounded-lg border-2 border-mist/90 bg-white px-4 py-3 text-sm shadow-[3px_3px_0_0_rgba(26,11,46,0.05)] outline-none ring-accent/30 transition focus:ring-2"
           />
         </div>
         <div>
@@ -103,17 +104,14 @@ export function ContactForm() {
           <select
             id="budget"
             name="budget"
-            className="mt-2 w-full rounded-xl border border-mist bg-white px-4 py-3 text-sm outline-none ring-accent/30 transition focus:ring-2"
+            className="mt-2 w-full rounded-lg border-2 border-mist/90 bg-white px-4 py-3 text-sm shadow-[3px_3px_0_0_rgba(26,11,46,0.05)] outline-none ring-accent/30 transition focus:ring-2"
             defaultValue=""
           >
-            <option value="" disabled>
-              Select a range
-            </option>
-            <option value="Under $5k">Under $5k</option>
-            <option value="$5k – $10k">$5k – $10k</option>
-            <option value="$10k – $20k">$10k – $20k</option>
-            <option value="$20k+">$20k+</option>
-            <option value="Not sure yet">Not sure yet</option>
+            {contactBudgetOptions.map((o) => (
+              <option key={o.value || "placeholder"} value={o.value} disabled={o.disabled}>
+                {o.label}
+              </option>
+            ))}
           </select>
         </div>
       </div>
@@ -128,14 +126,14 @@ export function ContactForm() {
           required
           rows={4}
           placeholder="Creative direction, stakeholders, building constraints…"
-          className="mt-2 w-full rounded-xl border border-mist bg-white px-4 py-3 text-sm outline-none ring-accent/30 transition focus:ring-2"
+          className="mt-2 w-full rounded-lg border-2 border-mist/90 bg-white px-4 py-3 text-sm shadow-[3px_3px_0_0_rgba(26,11,46,0.05)] outline-none ring-accent/30 transition focus:ring-2"
         />
       </div>
 
       <button
         type="submit"
         disabled={pending}
-        className="inline-flex w-full items-center justify-center rounded-full bg-ink px-6 py-3 text-sm font-semibold text-cloud transition hover:bg-accent hover:text-ink disabled:cursor-not-allowed disabled:opacity-60 sm:w-auto"
+        className="retro-btn-dark inline-flex w-full items-center justify-center px-6 py-3 text-sm sm:w-auto"
       >
         {pending ? "Sending…" : "Send project details"}
       </button>

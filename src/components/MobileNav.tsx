@@ -11,7 +11,7 @@ export function MobileNav() {
     <div className="lg:hidden">
       <button
         type="button"
-        className="rounded-full border border-mist bg-white px-3.5 py-2 text-[13px] font-semibold text-ink shadow-sm"
+        className="retro-btn-ghost inline-flex items-center justify-center px-3.5 py-2 text-[13px]"
         aria-expanded={open}
         aria-controls="mobile-nav"
         onClick={() => setOpen((v) => !v)}
@@ -21,7 +21,7 @@ export function MobileNav() {
       {open ? (
         <div
           id="mobile-nav"
-          className="absolute left-5 right-5 top-full z-40 mt-2 overflow-hidden rounded-2xl border border-mist/90 bg-cream/95 p-2 shadow-[0_20px_50px_-20px_rgba(10,12,15,0.35)] backdrop-blur-xl"
+          className="absolute left-5 right-5 top-full z-40 mt-2 overflow-hidden rounded-xl border-2 border-ink/10 bg-cream/95 p-2 shadow-[6px_6px_0_0_rgba(26,11,46,0.12)] backdrop-blur-xl"
         >
           <nav className="flex flex-col py-2" aria-label="Mobile">
             {navLinks.map(({ href, label }) => (

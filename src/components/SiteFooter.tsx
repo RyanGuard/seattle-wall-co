@@ -3,11 +3,11 @@ import { navLinks, site } from "@/lib/site";
 
 export function SiteFooter() {
   return (
-    <footer className="border-t border-white/10 bg-deep text-cloud">
+    <footer className="border-t-2 border-accent/25 bg-deep text-cloud">
       <div className="mx-auto max-w-6xl px-5 py-16 sm:px-8">
         <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-3">
           <div>
-            <p className="font-display text-xl font-semibold tracking-tight text-accent-soft">
+            <p className="font-display text-xl tracking-tight text-accent-soft">
               {site.name}
             </p>
             <p className="mt-4 max-w-sm text-sm leading-relaxed text-cloud/70">{site.tagline}</p>

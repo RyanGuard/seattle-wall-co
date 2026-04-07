@@ -19,7 +19,7 @@ export default function ContactPage() {
     <div className="bg-cream">
       <div className="mx-auto max-w-6xl px-5 py-16 sm:px-8 lg:py-24">
         <p className="eyebrow">Contact</p>
-        <h1 className="mt-6 font-display text-4xl font-medium tracking-tight text-ink sm:text-5xl">
+        <h1 className="mt-6 font-display text-4xl tracking-tight text-ink sm:text-5xl">
           Tell us about your wall
         </h1>
         <p className="mt-5 max-w-2xl text-pretty leading-relaxed text-muted">
@@ -30,13 +30,13 @@ export default function ContactPage() {
         <div className="mt-10 flex flex-wrap gap-3 text-sm">
           <a
             href={site.phoneHref}
-            className="inline-flex min-h-10 items-center justify-center rounded-full border border-mist bg-white px-5 font-semibold text-ink-muted shadow-sm transition hover:border-accent/30"
+            className="retro-btn-ghost inline-flex min-h-10 items-center justify-center px-5 text-sm"
           >
             Call {site.phone}
           </a>
           <a
             href={`mailto:${site.email}`}
-            className="inline-flex min-h-10 items-center justify-center rounded-full border border-mist bg-white px-5 font-semibold text-ink-muted shadow-sm transition hover:border-accent/30"
+            className="retro-btn-ghost inline-flex min-h-10 items-center justify-center px-5 text-sm"
           >
             Email {site.email}
           </a>

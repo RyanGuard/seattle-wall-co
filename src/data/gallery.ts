@@ -2,6 +2,9 @@
  * Industry-style examples modeled on common vertical wall-printing portfolios
  * (full-height facades, atriums, dining graphics, brand rooms). All Unsplash stock —
  * not Seattle Wall Co. client work; replace with your installs when ready.
+ *
+ * Order: lead with high-energy interiors/retail for the featured wide tile; exterior
+ * treatments move later so the first scroll impression isn’t a flat grey facade.
  */
 export type GalleryCategory = "Office" | "Retail" | "Event" | "Hospitality" | "Mural";
 
@@ -23,26 +26,15 @@ export type GalleryItem = {
 
 export const galleryItems: GalleryItem[] = [
   {
-    id: "exterior-full-height-wrap",
-    title: "Campus facade — full-height color story",
-    category: "Mural",
+    id: "brand-room-allover",
+    title: "Brand room — allover wall program",
+    category: "Retail",
     outcome:
-      "Turned a blank concrete facade into the building's signature landmark — visible from the street and impossible to miss.",
-    src: "https://images.unsplash.com/photo-1653570449715-e764cf567138?auto=format&fit=crop&w=1400&q=80",
+      "Delivered a fully branded pop-up room that photographs perfectly from every angle — corners, returns, and all.",
+    src: "https://images.unsplash.com/photo-1758923530347-05cafe8db58e?auto=format&fit=crop&w=1400&q=80",
     width: 1400,
     height: 933,
-    photoCredit: "Unsplash — exterior mural reference (not our install)",
-  },
-  {
-    id: "atrium-color-block",
-    title: "Atrium wall — floor-to-ceiling saturation",
-    category: "Office",
-    outcome:
-      "Gave a corporate lobby the visual punch of a gallery installation — floor-to-ceiling color with zero vinyl seams.",
-    src: "https://images.unsplash.com/photo-1638662676137-927e2475b072?auto=format&fit=crop&w=1400&q=80",
-    width: 1400,
-    height: 933,
-    photoCredit: "Unsplash — interior feature wall (not our install)",
+    photoCredit: "Unsplash — immersive retail walls (not our install)",
   },
   {
     id: "dining-booth-stripes",
@@ -54,6 +46,17 @@ export const galleryItems: GalleryItem[] = [
     width: 1400,
     height: 933,
     photoCredit: "Unsplash — dining graphics reference (not our install)",
+  },
+  {
+    id: "atrium-color-block",
+    title: "Atrium wall — floor-to-ceiling saturation",
+    category: "Office",
+    outcome:
+      "Gave a corporate lobby the visual punch of a gallery installation — floor-to-ceiling color with zero vinyl seams.",
+    src: "https://images.unsplash.com/photo-1638662676137-927e2475b072?auto=format&fit=crop&w=1400&q=80",
+    width: 1400,
+    height: 933,
+    photoCredit: "Unsplash — interior feature wall (not our install)",
   },
   {
     id: "stairwell-graphic-climb",
@@ -89,15 +92,15 @@ export const galleryItems: GalleryItem[] = [
     photoCredit: "Unsplash — lounge mural reference (not our install)",
   },
   {
-    id: "brand-room-allover",
-    title: "Brand room — allover wall program",
-    category: "Retail",
+    id: "exterior-full-height-wrap",
+    title: "Campus facade — full-height color story",
+    category: "Mural",
     outcome:
-      "Delivered a fully branded pop-up room that photographs perfectly from every angle — corners, returns, and all.",
-    src: "https://images.unsplash.com/photo-1758923530347-05cafe8db58e?auto=format&fit=crop&w=1400&q=80",
+      "Turned a blank concrete facade into the building's signature landmark — visible from the street and impossible to miss.",
+    src: "https://images.unsplash.com/photo-1653570449715-e764cf567138?auto=format&fit=crop&w=1400&q=80",
     width: 1400,
     height: 933,
-    photoCredit: "Unsplash — immersive retail walls (not our install)",
+    photoCredit: "Unsplash — exterior mural reference (not our install)",
   },
   {
     id: "industrial-masonry-wrap",

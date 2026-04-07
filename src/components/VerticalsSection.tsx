@@ -38,7 +38,7 @@ export function VerticalsSection() {
     <section id="verticals" className="scroll-mt-28 bg-white px-5 py-24 sm:px-8">
       <div className="mx-auto max-w-6xl">
         <p className="eyebrow">Who we work with</p>
-        <h2 className="mt-6 max-w-2xl font-display text-3xl font-medium tracking-tight text-ink text-balance sm:text-4xl">
+        <h2 className="mt-6 max-w-2xl font-display text-3xl tracking-tight text-ink text-balance sm:text-4xl">
           Wall printing for spaces that need to make an impression
         </h2>
         <p className="mt-5 max-w-2xl text-pretty text-base leading-relaxed text-muted">
@@ -50,10 +50,10 @@ export function VerticalsSection() {
           {verticals.map((v) => (
             <div
               key={v.title}
-              className="rounded-2xl border border-mist/90 bg-gradient-to-br from-cream/50 to-white p-7 shadow-[0_1px_3px_rgba(10,12,15,0.04)] transition hover:-translate-y-1 hover:border-accent/25 hover:shadow-[0_18px_40px_-24px_rgba(10,12,15,0.2)]"
+              className="rounded-2xl border-2 border-mist/80 bg-gradient-to-br from-cream/50 to-white p-7 shadow-[5px_5px_0_0_rgba(26,11,46,0.07)] transition hover:-translate-y-0.5 hover:border-accent/35 hover:shadow-[7px_7px_0_0_rgba(255,45,122,0.12)]"
             >
               <span className="text-2xl" aria-hidden>{v.icon}</span>
-              <h3 className="mt-4 font-display text-lg font-semibold text-ink">{v.title}</h3>
+              <h3 className="mt-4 font-display text-lg text-ink">{v.title}</h3>
               <p className="mt-3 text-sm leading-relaxed text-muted">{v.body}</p>
             </div>
           ))}
@@ -62,7 +62,7 @@ export function VerticalsSection() {
         <div className="mt-12 text-center">
           <Link
             href="/contact"
-            className="inline-flex min-h-11 items-center justify-center rounded-full bg-ink px-7 text-sm font-semibold text-cloud transition hover:bg-accent hover:text-ink"
+            className="retro-btn-dark inline-flex min-h-11 items-center justify-center px-7 text-sm"
           >
             Tell us about your space
           </Link>

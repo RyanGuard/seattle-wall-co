@@ -8,7 +8,7 @@ export function BeforeAfterSection({ items }: Props) {
   const hasPairs = items.length > 0;
 
   return (
-    <section id="before-after" className="scroll-mt-28 border-y border-mist/80 bg-white px-5 py-20 sm:px-8">
+    <section id="before-after" className="scroll-mt-28 border-y-2 border-mist/60 bg-white px-5 py-20 sm:px-8">
       <div className="mx-auto max-w-6xl">
         <header className="max-w-2xl">
           <p className="eyebrow">Before &amp; after</p>
@@ -37,7 +37,7 @@ export function BeforeAfterSection({ items }: Props) {
               <li key={item.id}>
                 <div className="mb-5 flex flex-col gap-1 sm:flex-row sm:items-baseline sm:justify-between">
                   <div>
-                    <p className="font-display text-lg font-semibold text-ink">{item.neighborhood}</p>
+                    <p className="font-display text-lg text-ink">{item.neighborhood}</p>
                     <p className="mt-1 text-sm text-muted">{item.context}</p>
                   </div>
                   <span className="text-[11px] font-semibold uppercase tracking-wider text-muted">
@@ -45,7 +45,7 @@ export function BeforeAfterSection({ items }: Props) {
                   </span>
                 </div>
                 <div className="grid gap-3 sm:grid-cols-2 sm:gap-4">
-                  <figure className="overflow-hidden rounded-2xl border border-mist bg-cream shadow-sm">
+                  <figure className="overflow-hidden rounded-2xl border-2 border-mist/80 bg-cream shadow-[5px_5px_0_0_rgba(26,11,46,0.06)]">
                     <div className="relative aspect-[4/3] w-full">
                       <Image
                         src={item.beforeSrc}
@@ -59,7 +59,7 @@ export function BeforeAfterSection({ items }: Props) {
                       Before
                     </figcaption>
                   </figure>
-                  <figure className="overflow-hidden rounded-2xl border border-accent/25 bg-cream shadow-md ring-1 ring-accent/20">
+                  <figure className="overflow-hidden rounded-2xl border-2 border-accent/40 bg-cream shadow-[6px_6px_0_0_rgba(255,45,122,0.22)] ring-1 ring-accent-2/20">
                     <div className="relative aspect-[4/3] w-full">
                       <Image
                         src={item.afterSrc}
@@ -78,14 +78,14 @@ export function BeforeAfterSection({ items }: Props) {
             ))}
           </ul>
         ) : (
-          <div className="mt-10 rounded-2xl border border-dashed border-mist bg-cream/80 px-6 py-10 text-center sm:px-10">
+          <div className="mt-10 rounded-2xl border-2 border-dashed border-mist/90 bg-cream/90 px-6 py-10 text-center shadow-[6px_6px_0_0_rgba(26,11,46,0.06)] sm:px-10">
             <p className="mx-auto max-w-md text-sm leading-relaxed text-muted">
               When you&apos;re ready, we&apos;ll light this section up with documented Puget Sound walls—
               empty drywall or patch-out, then the same surface with your print.
             </p>
             <Link
               href="/contact"
-              className="mt-6 inline-flex min-h-11 items-center justify-center rounded-full bg-ink px-7 text-sm font-semibold text-cloud transition hover:bg-accent hover:text-ink"
+              className="retro-btn-dark mt-6 inline-flex min-h-11 items-center justify-center px-7 text-sm"
             >
               Book a site visit
             </Link>

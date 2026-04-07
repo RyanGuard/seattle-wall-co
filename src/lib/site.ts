@@ -20,7 +20,7 @@ export const devTitleSuffix =
 export const site = {
   name: "Seattle Wall Co.",
   tagline:
-    "Direct-to-wall robotic printing for Seattle businesses — no vinyl, no seams, UV-cured for years of durability.",
+    "Large-format UV wall printing for Seattle teams—your print-ready files, on the wall, no vinyl to hang. We’ll sanity-check files and surfaces before we quote.",
   url: resolvePublicSiteUrl(),
   phone: "(360) 317-5952",
   phoneHref: "tel:+13603175952",
@@ -37,5 +37,6 @@ export const navLinks = [
   { href: "/#pricing", label: "Pricing" },
   { href: "/#compare", label: "Why us" },
   { href: "/#faq", label: "FAQ" },
+  { href: "/create", label: "Wall ideas" },
   { href: "/contact", label: "Contact" },
 ] as const;

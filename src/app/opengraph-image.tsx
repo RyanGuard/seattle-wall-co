@@ -15,18 +15,18 @@ export default function OpenGraphImage() {
           flexDirection: "column",
           justifyContent: "center",
           padding: 64,
-          background: "linear-gradient(135deg, #121a24, #1e2a3a 60%, #0c1017)",
-          color: "#eef2f6",
+          background: "linear-gradient(135deg, #2a0f4e 0%, #3d1770 45%, #1a0b2e 100%)",
+          color: "#f8f4ff",
           fontSize: 64,
-          fontWeight: 600,
-          letterSpacing: -1,
+          fontWeight: 800,
+          letterSpacing: -0.5,
         }}
       >
-        <div style={{ fontSize: 26, color: "#d4b458", textTransform: "uppercase", letterSpacing: 3 }}>
+        <div style={{ fontSize: 26, color: "#00d4b8", textTransform: "uppercase", letterSpacing: 4 }}>
           Seattle · Bellevue · Eastside
         </div>
         <div style={{ marginTop: 16 }}>{site.name}</div>
-        <div style={{ marginTop: 24, fontSize: 28, fontWeight: 400, maxWidth: 820, color: "#cbd5e1" }}>
+        <div style={{ marginTop: 24, fontSize: 28, fontWeight: 400, maxWidth: 820, color: "#e8d5f0" }}>
           Large-format wall printing for workplaces, retail, and events.
         </div>
       </div>

@@ -55,7 +55,7 @@ export function CompareSection() {
     <section id="compare" className="scroll-mt-28 bg-cream px-5 py-24 sm:px-8">
       <div className="mx-auto max-w-6xl">
         <p className="eyebrow">Why us</p>
-        <h2 className="mt-6 max-w-2xl font-display text-3xl font-medium tracking-tight text-ink text-balance sm:text-4xl">
+        <h2 className="mt-6 max-w-2xl font-display text-3xl tracking-tight text-ink text-balance sm:text-4xl">
           How wall printing stacks up for brand-led spaces
         </h2>
         <p className="mt-5 max-w-2xl text-pretty text-base leading-relaxed text-muted">
@@ -63,12 +63,12 @@ export function CompareSection() {
           facilities and brand teams.
         </p>
 
-        <div className="mt-14 hidden overflow-hidden rounded-2xl border border-mist bg-white shadow-[0_1px_3px_rgba(10,12,15,0.05)] lg:block">
+        <div className="mt-14 hidden overflow-hidden rounded-2xl border-2 border-mist/80 bg-white shadow-[6px_6px_0_0_rgba(0,212,184,0.12)] lg:block">
           <table className="min-w-full border-collapse text-left text-[13px] leading-snug">
             <thead>
               <tr className="bg-ink text-cloud">
                 <th className="px-5 py-4 font-semibold">Dimension</th>
-                <th className="bg-accent/20 px-5 py-4 font-semibold text-ink">Seattle Wall Co.</th>
+                <th className="bg-accent/25 px-5 py-4 font-semibold text-ink">Seattle Wall Co.</th>
                 <th className="px-5 py-4 font-medium text-cloud/80">Vinyl install</th>
                 <th className="px-5 py-4 font-medium text-cloud/80">Muralist</th>
                 <th className="px-5 py-4 font-medium text-cloud/80">DIY / budget</th>
@@ -92,9 +92,9 @@ export function CompareSection() {
           {rows.map((row) => (
             <article
               key={row.dimension}
-              className="rounded-2xl border border-mist/90 bg-white p-6 shadow-sm"
+              className="rounded-2xl border-2 border-mist/80 bg-white p-6 shadow-[5px_5px_0_0_rgba(26,11,46,0.06)]"
             >
-              <h3 className="font-display text-lg font-semibold text-ink">{row.dimension}</h3>
+              <h3 className="font-display text-lg text-ink">{row.dimension}</h3>
               <dl className="mt-4 space-y-4 text-[13px]">
                 <div className="rounded-xl bg-cream/80 p-4">
                   <dt className="font-semibold text-accent">Seattle Wall Co.</dt>
